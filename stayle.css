@@ -579,5 +579,14 @@ footer {
         margin: 10px 0;
     }
 
+    .hotels-table1,.hotels-table2 {
+        flex-wrap: wrap;
+    }
+
+    .hotels {
+        width: 100%;
+        margin: 20px 0;
+    }
+
 }
 
