@@ -229,7 +229,8 @@ label {
     padding: 3% 0;
     text-transform: uppercase;
     letter-spacing: 0.1vw;
-    font-size: 11px;
+    font-size: 16px;
+    word-spacing: 20px;
 }
 
 .city-row {
@@ -327,10 +328,10 @@ label {
 /*hotelsssss*/
 
 .hotels-table {
-    width: 85%;
+    width: 90%;
     display: flex;
     flex-direction: column;
-    padding: 0 0 0 8%;
+    margin: 0 auto;
 }
 
 .hotels-table1 {
@@ -352,9 +353,9 @@ label {
     flex-direction: column;
     justify-content: flex-end;
     position: relative;
-    width: 22%;
-    height: 38vh;
-
+    width: 25%;
+    height: 45vh;
+    margin: 0 10px;
 }
 
 .hotnameStarDayDol {
@@ -368,7 +369,9 @@ label {
 }
 
 .hotelsabout {
-    background: #f9f9f9;
+    background: #ffffff;
+    min-height: 90px;
+    color: #697899;
 }
 
 .stars-img img {
@@ -377,15 +380,23 @@ label {
 }
 
 .dolars-size {
-    font-size: 230%;
+    font-size: 30px;
 }
 
 .viewmore {
     position: absolute;
     left: 50%;
-    transform: translate(-50%);
-    bottom: -2%;
+    transform: translate(-50%, 50%);
+    bottom: 0;
+    padding: 10px 30px;
+    margin: 0;
+    box-shadow: 0 0 65px 0 rgba(163, 163, 163, 0.25);
+    background-color: #ffffff;
+    border-radius: 50px;
+}
 
+.hotels-section {
+    background: #f9f9f9;
 }
 
 .hotels1 {
@@ -493,7 +504,7 @@ footer {
         position: fixed;
         opacity: 0;
         transition: all 0.5s;
-        display: flex;
+        display: none;
         width: 100%;
         height: 100%;
         background: rgba(255, 255, 255, 0.84);
@@ -502,16 +513,16 @@ footer {
         flex-direction: column;
         justify-content: space-evenly;
         font-size: 22px;
-        z-index: 1;
+        z-index: -1;
     }
 
     .main-nav.toggled {
         opacity: 1;
+        z-index: 1;
+        display: flex;
     }
 
     /* Navigation */
-
-
 
 }
 
@@ -519,8 +530,18 @@ footer {
     .main-nav {
         font-size: 30px;
     }
+
     .top-blueinput {
-        min-height: 70vh;
+        min-height: 80vh;
+        width: 100%;
+    }
+
+    .bluelabels {
+        padding: 10px 50px;
+    }
+
+    .form-input {
+        max-width: initial;
         width: 100%;
     }
 
@@ -528,4 +549,35 @@ footer {
         border-radius: 50px;
         width: 100%;
     }
+
+    .greece-city {
+        flex-wrap: wrap;
+    }
+
+    .small-city {
+        width: 100%;
+        height: 350px;
+    }
+
+    .big-city {
+        min-height: 160px;
+        width: 100%;
+        margin: 14px 0;
+    }
+
+    .big2-city {
+        margin-top: 14px;
+        padding: 0;
+    }
+
+    .dark-headings h3 {
+        font-size: 22px;
+
+    }
+
+    .dark-headings {
+        margin: 10px 0;
+    }
+
 }
+
