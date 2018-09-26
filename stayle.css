@@ -519,4 +519,13 @@ footer {
     .main-nav {
         font-size: 30px;
     }
+    .top-blueinput {
+        min-height: 70vh;
+        width: 100%;
+    }
+
+    .search-btn {
+        border-radius: 50px;
+        width: 100%;
+    }
 }
