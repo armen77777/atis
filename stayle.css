@@ -1,0 +1,522 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.blue-fonts {
+    color: #017dfb;
+
+}
+
+.top-href {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-nav {
+    display: flex;
+    width: 75%;
+    justify-content: space-around;
+    letter-spacing: 2px;
+    color: #c7cad6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    align-items: center;
+}
+
+.host-btn {
+    box-shadow: 0 0 65px 0 rgba(1, 125, 251, 0.25);
+}
+
+.grecce-fonts img {
+    width: 100%;
+}
+
+.logo {
+    width: 335px;
+    transition: all 1s;
+}
+
+/*header*/
+header {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 1;
+}
+
+.header-wrap {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.round-stayle {
+    background-color: #ffffff;
+    border-radius: 50px;
+    margin: 15px;
+    padding: 15px 40px;
+}
+
+/* Navigation */
+
+.target-burger {
+    width: 3.25em;
+    height: 3.25em;
+    z-index: 2;
+    display: none;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.target-burger:hover {
+    cursor: pointer;
+    -webkit-opacity: 0.45;
+    -moz-opacity: 0.45;
+    opacity: 0.45;
+}
+
+.target-burger ul.buns {
+    width: 1.625em;
+    height: 1.625em;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    -webkit-transition: -webkit-transform 1s cubic-bezier(0.23, 1, 0.32, 1), color 1s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1), color 1s cubic-bezier(0.23, 1, 0.32, 1);
+    -webkit-transform: translateZ(0);
+    transform: translate(0, 85%);
+    color: #fff;
+}
+
+.target-burger ul.buns li.bun {
+    width: 100%;
+    height: 2px;
+    background-color: #017dfb;
+    -webkit-transition: -webkit-transform 1s cubic-bezier(0.23, 1, 0.32, 1), background-color 1s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1), background-color 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.target-burger ul.buns li.bun:last-child {
+    -webkit-transform: translateY(5.75px) translateZ(0);
+    transform: translateY(5.75px) translateZ(0);
+}
+
+.target-burger.toggled ul.buns li.bun {
+    -webkit-transform: rotate(45deg) translateZ(0);
+    transform: rotate(45deg) translateZ(0) translate(2px);
+}
+
+.target-burger.toggled ul.buns li.bun:last-child {
+    -webkit-transform: rotate(-45deg) translateZ(0);
+    transform: rotate(-45deg) translateZ(0) translate(0.5px);
+}
+
+/* Navigation */
+
+/*main*/
+.top {
+    min-height: 100vh;
+    background: url(imiges/topfoto.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.form-input {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    max-width: 150px;
+}
+
+.search-btn {
+    width: 40px;
+    height: 40px;
+    background: white url("imiges/Search.png") center no-repeat;
+    border-radius: 100%;
+}
+
+.bluelabels input {
+    background: transparent;
+    border: none;
+    padding: 5px 10px;
+    color: #fff;
+    width: 100%;
+}
+
+.bluelabels input::placeholder {
+    color: #fff;
+}
+
+span.input-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.top-wrap {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+
+}
+
+.blue-title {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 35px 0;
+}
+
+.grecce-fonts {
+    width: 40%;
+
+}
+
+.top-blueinput {
+    background: url("imiges/BlueBox.png");
+    min-height: 15vh;
+    color: #ffffff;
+    width: 100%;
+    position: relative;
+}
+
+.bluelabels {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 100%;
+    position: absolute;
+    align-items: center;
+    padding: 0 80px;
+    box-sizing: border-box;
+}
+
+.input-img {
+}
+
+label {
+    /*padding: 11px;*/
+}
+
+/*qaxaqi maser@*/
+
+.dark-headings {
+    color: #d0d5dc;
+    display: flex;
+    justify-content: center;
+}
+
+.center-headings {
+    padding: 3% 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1vw;
+    font-size: 11px;
+}
+
+.city-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+}
+
+.greece-city {
+    display: flex;
+    justify-content: space-between;
+    min-height: 80vh;
+    color: #ffffff;
+
+}
+
+.small-city {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 27%;
+}
+
+.small-city .city-row {
+    flex-basis: 48%;
+}
+
+.city-section {
+    text-transform: capitalize;
+}
+
+.big-city {
+    width: 43%
+}
+
+.sity-name {
+    padding: 15px 35px;
+    font-size: 28px;
+
+}
+
+.big2-city {
+    display: flex;
+    justify-content: space-between;
+    min-height: 50vh;
+    color: #ffffff;
+    padding: 1.5% 0 1% 0;
+
+}
+
+.big2Foto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 49.3%;
+}
+
+.thessaloniki {
+    background: url("imiges/thessaloniki.jpg");
+    background-size: cover;
+}
+
+.halkidiki {
+    background: url("imiges/halkidiki.jpg");
+    background-size: cover;
+}
+
+.crete {
+    background: url("imiges/Crete.jpg");
+    background-size: cover;
+}
+
+.athens {
+    background: url("imiges/athens.jpg");
+    background-size: cover;
+}
+
+.mykonos {
+    background: url("imiges/mykonos.jpg");
+    background-size: cover;
+}
+
+.meteora {
+    background: url("imiges/Meteora.jpg");
+    background-size: cover;
+}
+
+.myrtosbeach {
+    background: url("imiges/myrtosbeach.jpg");
+    background-size: cover;
+}
+
+/*hotelsssss*/
+
+.hotels-table {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 8%;
+}
+
+.hotels-table1 {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.hotels-table2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 0 0 0;
+
+}
+
+.hotels {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    width: 22%;
+    height: 38vh;
+
+}
+
+.hotnameStarDayDol {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 4% 0 4%;
+}
+
+.hotels-name {
+    text-transform: capitalize;
+}
+
+.hotelsabout {
+    background: #f9f9f9;
+}
+
+.stars-img img {
+    width: auto;
+    height: 17px;
+}
+
+.dolars-size {
+    font-size: 230%;
+}
+
+.viewmore {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -2%;
+
+}
+
+.hotels1 {
+    background: url("imiges/elgrecohotel.jpg");
+    background-size: cover;
+}
+
+.hotels2 {
+    background: url("imiges/panorama.jpg");
+    background-size: cover;
+}
+
+.hotels3 {
+    background: url("imiges/syprotelhotel.jpg");
+    background-size: cover;
+}
+
+.hotels4 {
+    background: url("imiges/LouisCretaPrincess.jpg");
+    background-size: cover;
+}
+
+.hotels5 {
+    background: url("imiges/CorfuPalaceHotel.jpg");
+    background-size: cover;
+}
+
+.hotels6 {
+    background: url("imiges/AzulHotel.jpg");
+    background-size: cover;
+}
+
+.hotels7 {
+    background: url("imiges/VolcanoViewVillasHotel.jpg");
+    background-size: cover;
+}
+
+.hotels8 {
+    background: url("imiges/HotelsinSantorini .jpg");
+    background-size: cover;
+}
+
+/*bottom foto*/
+.bottom-section {
+    height: 100vh;
+}
+
+.blue-foto {
+    background: url("imiges/footerfoto.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+}
+
+.bottom-title {
+    font-size: 550%;
+}
+
+h1 .bottom-grecce {
+    color: #0ed1ff;
+}
+
+.travelhttp {
+    padding: 35px;
+}
+
+footer {
+
+    height: 20vh;
+}
+
+.footer-text {
+    color: #d0d5dc;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.atis-text {
+    padding: 11px;
+}
+
+@media all and (max-width: 1300px) {
+    /* Navigation */
+    .target-burger {
+        display: block;
+    }
+
+    .target-burger.toggled {
+        position: fixed;
+        z-index: 10;
+        right: 5%;
+        top: 5%;
+    }
+
+    .main-nav {
+        position: fixed;
+        opacity: 0;
+        transition: all 0.5s;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.84);
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-size: 22px;
+        z-index: 1;
+    }
+
+    .main-nav.toggled {
+        opacity: 1;
+    }
+
+    /* Navigation */
+
+
+
+}
+
+@media all and (max-width: 700px) {
+    .main-nav {
+        font-size: 30px;
+    }
+}
